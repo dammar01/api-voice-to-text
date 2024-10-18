@@ -1,25 +1,25 @@
-# API Audio to Text dengan Vosk
+# Audio to Text API with Vosk
 
-Aplikasi API ini memungkinkan pengguna untuk mengunggah file audio dan mengonversinya menjadi teks menggunakan Vosk, sebuah pustaka pengenalan suara.
+This API application allows users to upload audio files and convert them into text using Vosk, a speech recognition library.
 
-## Fitur
+## Features
 
-- Upload file audio dalam berbagai format (MP3, WAV, dll.)
-- Konversi audio menjadi teks menggunakan model Vosk
-- Mendukung autentikasi melalui header
+- Upload audio files in various formats (MP3, WAV, etc.)
+- Convert audio to text using the Vosk model
+- Supports authentication through headers
 
 ## Prerequisites
 
-Sebelum memulai, pastikan Anda memiliki hal-hal berikut:
+Before getting started, ensure you have the following:
 
-- **Docker**: Pastikan Docker dan Docker Compose telah terinstal di sistem Anda. [Ikuti petunjuk pemasangan Docker di sini.](https://docs.docker.com/get-docker/)
-- **FFmpeg**: Pastikan FFmpeg terinstal untuk mengonversi format audio. Jika menggunakan Docker, FFmpeg sudah termasuk dalam image yang digunakan.
+- **Docker**: Make sure Docker and Docker Compose are installed on your system. [Follow the installation guide for Docker here.](https://docs.docker.com/get-docker/)
+- **FFmpeg**: Ensure FFmpeg is installed for converting audio formats. If using Docker, FFmpeg is already included in the image used.
 
 ## Setup
 
-Ikuti langkah-langkah berikut untuk mengatur dan menjalankan aplikasi:
+Follow these steps to set up and run the application:
 
-### 1. Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/dammar01/api-audio-to-text.git
