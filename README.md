@@ -21,10 +21,19 @@ Ikuti langkah-langkah berikut untuk mengatur dan menjalankan aplikasi:
 
 ### 1. Clone Repository
 
-Clone repositori ini ke dalam direktori lokal Anda:
+```bash
+git clone https://github.com/dammar01/api-audio-to-text.git
+cd api-audio-to-text
+```
+
+### 2. Build Docker Image
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
 docker-compose up --build
+```
+
+### 3. Mengakses API
+
+```bash
+http://0.0.0.0:8000
 ```
