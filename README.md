@@ -41,7 +41,7 @@ docker-compose up --build
 http://0.0.0.0:8000
 ```
 
-### Local Setup
+## Local Setup
 
 ### 1. Clone the Repository
 
