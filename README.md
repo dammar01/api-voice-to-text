@@ -14,6 +14,7 @@ Before getting started, ensure you have the following:
 
 - **Docker**: Make sure Docker and Docker Compose are installed on your system. [Follow the installation guide for Docker here.](https://docs.docker.com/get-docker/)
 - **FFmpeg**: Ensure FFmpeg is installed for converting audio formats. If using Docker, FFmpeg is already included in the image used.
+- **.env File**: Copy .env.example to .env and input your backend API_KEY. This API_KEY is used to restrict access to the application, ensuring that it can only be accessed from authorized servers (You can use custom generated API key or random text).
 
 ## Setup
 
