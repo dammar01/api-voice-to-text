@@ -36,9 +36,11 @@ docker-compose up --build
 ```
 
 ### 3. Access the API
-
+using postman or
 ```bash
-http://0.0.0.0:8000
+curl -X POST http://0.0.0.0:8000/upload-audio \
+-H "Authorization: Bearer API_KEY" \
+-F "file=@path_to_your_audio_file"
 ```
 
 ## Local Setup
@@ -70,7 +72,9 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 ### 5. Access the API
-
+using postman or
 ```bash
-http://0.0.0.0:8000
+curl -X POST http://0.0.0.0:8000/upload-audio \
+-H "Authorization: Bearer API_KEY" \
+-F "file=@path_to_your_audio_file"
 ```
