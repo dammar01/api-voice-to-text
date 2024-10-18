@@ -1,17 +1,21 @@
+# Gunakan image Python sebagai dasar
 FROM python:3.12
+
+# Install FFmpeg
+# RUN apt-get update && apt-get install -y ffmpeg
 
 # Set working directory
 WORKDIR /app
 
-# Copy requirements file dan install dependencies
+# Salin requirements.txt dan install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy semua file dari backend/app ke dalam container
-COPY app/ ./app
+# Salin semua file dari direktori saat ini ke dalam container
+COPY . .
 
 # Expose port untuk FastAPI
 EXPOSE 8000
 
-# Perintah untuk menjalankan aplikasi
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Perintah untuk menjalankan aplikasi FastAPI
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
