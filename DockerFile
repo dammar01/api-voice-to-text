@@ -2,7 +2,7 @@
 FROM python:3.12
 
 # Install FFmpeg
-# RUN apt-get update && apt-get install -y ffmpeg
+RUN apt-get update && apt-get install -y ffmpeg
 
 # Set working directory
 WORKDIR /app
