@@ -26,13 +26,13 @@ git clone https://github.com/dammar01/api-audio-to-text.git
 cd api-audio-to-text
 ```
 
-### 2. Build Docker Image
+### 2. Build the Docker Image
 
 ```bash
 docker-compose up --build
 ```
 
-### 3. Mengakses API
+### 3. Access the API
 
 ```bash
 http://0.0.0.0:8000
