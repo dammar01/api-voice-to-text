@@ -79,7 +79,7 @@ curl -X POST http://0.0.0.0:8000 \
 -F "file=@path_to_your_audio_file"
 ```
 
-### Change Model Vosk
+## Change Model Vosk
 
 To replace the default Vosk model with your custom model, follow these steps:
 
