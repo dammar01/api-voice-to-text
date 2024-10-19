@@ -21,8 +21,8 @@ Before getting started, ensure you have the following:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/dammar01/api-audio-to-text.git
-cd api-audio-to-text
+git clone https://github.com/dammar01/api-voice-to-text.git
+cd api-voice-to-text
 ```
 
 ### 2. Set Up a Virtual Environment
@@ -59,8 +59,8 @@ curl -X POST http://0.0.0.0:8000 \
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/dammar01/api-audio-to-text.git
-cd api-audio-to-text
+git clone https://github.com/dammar01/api-voice-to-text.git
+cd api-voice-to-text
 ```
 
 ### 2. Build the Docker Image
