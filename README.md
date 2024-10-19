@@ -1,4 +1,4 @@
-# Audio to Text API with Vosk
+# Voice to Text API with Vosk
 
 This API application allows users to upload audio files and convert them into text using Vosk, a speech recognition library.
 
