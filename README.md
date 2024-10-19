@@ -74,7 +74,7 @@ docker-compose up --build
 using Postman or cURL
 
 ```bash
-curl -X POST http://0.0.0.0:8000 \
+curl -X POST http://loaclhost:8000 \
 -H "Authorization: Bearer API_KEY" \
 -F "file=@path_to_your_audio_file"
 ```
