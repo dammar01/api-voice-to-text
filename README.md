@@ -16,33 +16,6 @@ Before getting started, ensure you have the following:
 - **FFmpeg**: Ensure FFmpeg is installed for converting audio formats. If using Docker, FFmpeg is already included in the image used.
 - **.env File**: Copy .env.example to .env and input your backend API_KEY. This API_KEY is used to restrict access to the application, ensuring that it can only be accessed from authorized servers (You can use custom generated API key or random text).
 
-## Setup
-
-Follow these steps to set up and run the application:
-
-## Using Docker
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/dammar01/api-audio-to-text.git
-cd api-audio-to-text
-```
-
-### 2. Build the Docker Image
-
-```bash
-docker-compose up --build
-```
-
-### 3. Access the API
-using postman or
-```bash
-curl -X POST http://0.0.0.0:8000 \
--H "Authorization: Bearer API_KEY" \
--F "file=@path_to_your_audio_file"
-```
-
 ## Local Setup
 
 ### 1. Clone the Repository
@@ -72,9 +45,58 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 ### 5. Access the API
+
 using postman or
+
 ```bash
 curl -X POST http://0.0.0.0:8000 \
 -H "Authorization: Bearer API_KEY" \
 -F "file=@path_to_your_audio_file"
 ```
+
+## Using Docker
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/dammar01/api-audio-to-text.git
+cd api-audio-to-text
+```
+
+### 2. Build the Docker Image
+
+```bash
+docker-compose up --build
+```
+
+### 3. Access the API
+
+using Postman or cURL
+
+```bash
+curl -X POST http://0.0.0.0:8000 \
+-H "Authorization: Bearer API_KEY" \
+-F "file=@path_to_your_audio_file"
+```
+
+### Change Model Vosk
+
+To replace the default Vosk model with your custom model, follow these steps:
+
+### 1. Download the Vosk Model
+
+Visit the [Vosk model repository](https://alphacephei.com/vosk/models) and choose the model that fits your needs. Download and extract the model files.
+
+### 2. Replace the Existing Model
+
+After extracting the model files, you will have a folder named after the model, e.g., vosk-model-en-us-daanzu-20200905. Rename this folder to vosk to match the expected folder name in the application.
+
+### 3. Copy the Model to the Application
+
+Replace the existing vosk model folder inside your application directory at ./app/vosk. You can do this manually by copying the newly downloaded vosk folder into the directory:
+
+```bash
+cp -r /path_to_downloaded_model/vosk ./app/vosk
+```
+
+This will overwrite the old model files with your new model.
