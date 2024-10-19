@@ -56,17 +56,16 @@ curl -X POST http://0.0.0.0:8000 \
 
 ## Using Docker
 
-### 1. Clone the Repository
+### 1. Pull from docker hub
 
 ```bash
-git clone https://github.com/dammar01/api-voice-to-text.git
-cd api-voice-to-text
+docker pull dmmrs/api-voice-to-text:latest
 ```
 
-### 2. Build the Docker Image
+### 2. Run images
 
 ```bash
-docker-compose up --build
+docker run -d -p 8000:8000 -e API_KEY=YOUR_API_KEY dmmrs/api-voice-to-text:latest
 ```
 
 ### 3. Access the API

@@ -6,8 +6,7 @@ from pydub import AudioSegment
 import os, shutil, subprocess, json
 
 app = FastAPI()
-
-model_path = "./vosk"
+model_path = "./app/vosk" if os.path.exists("./app/vosk") else "./app/app/vosk"
 model = Model(model_path, lang="en-us")
 if os.path.exists("./tmp"):
     shutil.rmtree("./tmp")
