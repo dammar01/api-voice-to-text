@@ -73,7 +73,7 @@ docker run -d -p 8000:8000 -e API_KEY=YOUR_API_KEY dmmrs/api-voice-to-text:lates
 using Postman or cURL
 
 ```bash
-curl -X POST http://loaclhost:8000 \
+curl -X POST http://localhost:8000 \
 -H "Authorization: Bearer API_KEY" \
 -F "file=@path_to_your_audio_file"
 ```
