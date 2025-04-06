@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ### 4. Run the Application
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 ### 5. Access the API
